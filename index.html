@@ -69,12 +69,12 @@
         <!-- Nav Pills start -->
         <ul class="nav nav-tabs justify-content-center">
             <li class="nav-item" role="presentation">
-              <a class="nav-link" aria-current="page" href="#" id="grid-tab" data-bs-toggle="pill" data-bs-target="#grid-view" type="button" role="tab">
+              <a class="nav-link active" aria-current="page" href="#" id="grid-tab" data-bs-toggle="pill" data-bs-target="#grid-view" type="button" role="tab">
                 <i class="bi bi-grid-3x3"></i>
               </a>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link active" aria-current="page" href="#" id="single-tab" data-bs-toggle="pill" data-bs-target="#single-view" type="button" role="tab">
+              <a class="nav-link" aria-current="page" href="#" id="single-tab" data-bs-toggle="pill" data-bs-target="#single-view" type="button" role="tab">
                 <i class="bi bi-square-fill"></i>
               </a>
             </li>
@@ -84,97 +84,138 @@
         <!-- Tab Content start -->
         <div class="tab-content" id="photoTabsContent">
             <!--Grid view-->
-            <div class="tab-pane fade" id="grid-view" role="tabpanel">
-                <div class="container-fluid mx-2 my-2">
-                    <div class="row g-2">
-                        <div class="col-4"><img src="./images/img-1.jpg" class="img-fluid" alt="Imagen 1"></div>
-                        <div class="col-4"><img src="./images/img-2.jpg" class="img-fluid" alt="Imagen 2"></div>
-                        <div class="col-4"><img src="./images/img-3.jpg" class="img-fluid" alt="Imagen 3"></div>
-                        <div class="col-4"><img src="./images/img-4.jpg" class="img-fluid" alt="Imagen 4"></div>
-                        <div class="col-4"><img src="./images/img-5.jpg" class="img-fluid" alt="Imagen 5"></div>
-                        <div class="col-4"><img src="./images/img-6.jpg" class="img-fluid" alt="Imagen 6"></div>
-                        <div class="col-4"><img src="./images/img-7.jpg" class="img-fluid" alt="Imagen 7"></div>
-                        <div class="col-4"><img src="./images/img-8.jpg" class="img-fluid" alt="Imagen 8"></div>
-                        <div class="col-4"><img src="./images/img-9.jpg" class="img-fluid" alt="Imagen 9"></div>
+            <div class="tab-pane fade show active" id="grid-view" role="tabpanel">
+                <div class="container-fluid my-2">
+                    <div class="row mx-auto">
+                        <div class="col-12 col-lg-4 mt-4"><img src="./images/img-2.jpg" class="img-fluid" alt="Imagen 2"></div>
+                        <div class="col-12 col-lg-4 mt-4"><img src="./images/img-3.jpg" class="img-fluid" alt="Imagen 3"></div>
+                        <div class="col-12 col-lg-4 mt-4"><img src="./images/img-1.jpg" class="img-fluid" alt="Imagen 1"></div>
+                    </div>
+                    <div class="row mx-auto">
+                        <div class="col-12 col-lg-4 mt-4"><img src="./images/img-4.jpg" class="img-fluid" alt="Imagen 4"></div>
+                        <div class="col-12 col-lg-4 mt-4"><img src="./images/img-5.jpg" class="img-fluid" alt="Imagen 5"></div>
+                        <div class="col-12 col-lg-4 mt-4"><img src="./images/img-6.jpg" class="img-fluid" alt="Imagen 6"></div>
+                    </div>
+                    <div class="row mx-auto">
+                        <div class="col-12 col-lg-4 mt-4"><img src="./images/img-7.jpg" class="img-fluid" alt="Imagen 7"></div>
+                        <div class="col-12 col-lg-4 mt-4"><img src="./images/img-8.jpg" class="img-fluid" alt="Imagen 8"></div>
+                        <div class="col-12 col-lg-4 mt-4"><img src="./images/img-9.jpg" class="img-fluid" alt="Imagen 9"></div>
                     </div>
                 </div>
             </div>
 
             <!--Single view-->
 
-            <div class="tab-pane fade show active" id="single-view" role="tabpanel">
+            <div class="tab-pane fade" id="single-view" role="tabpanel">
                 <div class="container my-2">
                     <div class="">
-                        <div class="row border border-ligth rounded my-3 pt-2">
-                            <div class="col-6 text-start align-content-center"><h4>Mountains</h4></div>
-                            <div class="col-6 text-end align-content-center">1/9</div>
-                            <img src="./images/img-1.jpg" class="col-12 img-fluid py-2" alt="Imagen 1"/>                          
-                            <div class="col-12"><strong>200 Likes</strong></div>
-                            <p class="col-12">This is the first one example, in this case is a mountain</p>
+
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                                <h4>Mountains</h4>
+                                <span>1/9</span>
+                            </div>
+                            <img src="./images/img-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">200 Likes</h5>
+                              <p class="card-text">This is the first one example, in this case is a mountain</p>
+                            </div>
                         </div>
 
-                        <div class="row border border-ligth rounded my-3 pt-2">
-                            <div class="col-6 text-start align-content-center"><h4>Forest and lake</h4></div>
-                            <div class="col-6 text-end align-content-center">2/9</div>
-                            <img src="./images/img-2.jpg" class="col-12 img-fluid py-2" alt="Imagen 2"/>
-                            <div class="col-12"><strong>300 Likes</strong></div>
-                            <p class="col-12">This is the second one example, in this case is a forest</p>
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                                <h4>Forest and lake</h4>
+                                <span>2/9</span>
+                            </div>
+                            <img src="./images/img-2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">250 Likes</h5>
+                              <p class="card-text">This is the second one example, in this case is a forest</p>
+                            </div>
                         </div>
 
-                        <div class="row border border-ligth rounded my-3 pt-2">
-                            <div class="col-6 text-start align-content-center"><h4>Forest</h4></div>
-                            <div class="col-6 text-end align-content-center">3/9</div>
-                            <img src="./images/img-3.jpg" class="img-fluid py-2" alt="Imagen 3"/>
-                            <div class="col-12"><strong>250 Likes</strong></div>
-                            <p class="col-12">This is another example, in this case is a second forest but without lake</p>
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                                <h4>Forest</h4>
+                                <span>3/9</span>
+                            </div>
+                            <img src="./images/img-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">400 Likes</h5>
+                              <p class="card-text">This is another example, in this case is a second forest but without lake</p>
+                            </div>
                         </div>
 
-                        <div class="row border border-ligth rounded my-3 pt-2">
-                            <div class="col-6 text-start align-content-center"><h4>Flowers and sky</h4></div>
-                            <div class="col-6 text-end align-content-center">4/9</div>
-                            <img src="./images/img-4.jpg" class="img-fluid py-2" alt="Imagen 4">
-                            <div class="col-12"><strong>400 Likes</strong></div>
-                            <p class="col-12">This is the fourth picture</p>
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                                <h4>Flowers and sky</h4>
+                                <span>4/9</span>
+                            </div>
+                            <img src="./images/img-4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">210 Likes</h5>
+                              <p class="card-text">This is the fourth picture</p>
+                            </div>
                         </div>
 
-                        <div class="row border border-ligth rounded my-3 pt-2">
-                            <div class="col-6 text-start align-content-center"><h4>Waterfall picture</h4></div>
-                            <div class="col-6 text-end align-content-center">5/9</div>
-                            <img src="./images/img-5.jpg" class="img-fluid py-2" alt="Imagen 5">
-                            <div class="col-12"><strong>100 Likes</strong></div>
-                            <p class="col-12">This is a beutifull group of waterfalls</p>
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                                <h4>Waterfalls picture</h4>
+                                <span>5/9</span>
+                            </div>
+                            <img src="./images/img-5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">500 Likes</h5>
+                              <p class="card-text">This is a beutifull group of waterfalls</p>
+                            </div>
                         </div>
 
-                        <div class="row border border-ligth rounded my-3 pt-2">
-                            <div class="col-6 text-start align-content-center"><h4>Sunset</h4></div>
-                            <div class="col-6 text-end align-content-center">6/9</div>
-                            <img src="./images/img-6.jpg" class="img-fluid py-2" alt="Imagen 6">
-                            <div class="col-12"><strong>230 Likes</strong></div>
-                            <p class="col-12">This is a sunset</p>
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                                <h4>Sunset</h4>
+                                <span>6/9</span>
+                            </div>
+                            <img src="./images/img-6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">220 Likes</h5>
+                              <p class="card-text">This is a sunset</p>
+                            </div>
                         </div>
 
-                        <div class="row border border-ligth rounded my-3 pt-2">
-                            <div class="col-6 text-start align-content-center"><h4>Desert picture</h4></div>
-                            <div class="col-6 text-end align-content-center">7/9</div>
-                            <img src="./images/img-7.jpg" class="img-fluid py-2" alt="Imagen 7">
-                            <div class="col-12"><strong>200 Likes</strong></div>
-                            <p class="col-12">This is a desert picture</p>
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                                <h4>Desert picture</h4>
+                                <span>7/9</span>
+                            </div>
+                            <img src="./images/img-7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">300 Likes</h5>
+                              <p class="card-text">This is a desert picture</p>
+                            </div>
                         </div>
 
-                        <div class="row border border-ligth rounded my-3 pt-2">
-                            <div class="col-6 text-start align-content-center"><h4>Ice</h4></div>
-                            <div class="col-6 text-end align-content-center">8/9</div>
-                            <img src="./images/img-8.jpg" class="img-fluid py-2" alt="Imagen 8">
-                            <div class="col-12"><strong>200 Likes</strong></div>
-                            <p class="col-12">This is my picture number eight</p>
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                                <h4>Ice</h4>
+                                <span>8/9</span>
+                            </div>
+                            <img src="./images/img-8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">360 Likes</h5>
+                              <p class="card-text">This is my picture number eight</p>
+                            </div>
                         </div>
 
-                        <div class="row border border-ligth rounded my-3 pt-2">
-                            <div class="col-6 text-start align-content-center"><h4>Jungle</h4></div>
-                            <div class="col-6 text-end align-content-center">9/9</div>
-                            <img src="./images/img-9.jpg" class="img-fluid py-2" alt="Imagen 9">
-                            <div class="col-12"><strong>500 Likes</strong></div>
-                            <p class="col-12">This is my last picture</p>
+                        <div class="card mx-auto" style="width: 36rem;">
+                            <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                                <h4>Jungle</h4>
+                                <span>9/9</span>
+                            </div>
+                            <img src="./images/img-9.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">510 Likes</h5>
+                              <p class="card-text">This is my last picture</p>
+                            </div>
                         </div>
 
                     </div>
